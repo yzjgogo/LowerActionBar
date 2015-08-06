@@ -9,6 +9,7 @@ public class SecondActivity extends ActionBarActivity {
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_second);
+		//向低版本兼容的方法
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 	    // If your minSdkVersion is 11 or higher, instead use:
 	    // getActionBar().setDisplayHomeAsUpEnabled(true);
