@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yzjdev="http://schemas.android.com/apk/res-auto" >
+    <!-- 
+    	1、always：这个值会使菜单项一直以Action Button的形式显示在Action Bar上。
+　　		2、ifRoom：如果有足够的空间，这个值会使菜单项显示在Action Bar上。
+　　		3、never：这个值使菜单项永远都不出现在Action Bar上，而是显示在overflow里。
+　　		4、withText：这个值使菜单项和它的图标，菜单文本一起显示。
+
+		Attribute "showAsAction" is only used in API level 11 and higher (current min is 7)
+		上面的警告的解决办法
+		自定义一个命名空间：我这定义成了yzjdev,直接改成yzjdev就可以，没那么复杂
+     -->
+      <!-- Search, should appear as action button -->
+    <item android:id="@+id/action_search"
+          android:icon="@drawable/ic_action_search"
+          android:title="@string/action_search"
+          yzjdev:showAsAction="always" />
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_settings"
+          android:title="@string/action_settings"
+          yzjdev:showAsAction="never" />  
+
+</menu>
