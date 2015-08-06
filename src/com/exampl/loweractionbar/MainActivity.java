@@ -7,7 +7,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
-
+/**
+ * ≤‚ ‘menu
+ * @author Administrator
+ *
+ */
 public class MainActivity extends ActionBarActivity {
 
 	@Override
