@@ -5,15 +5,34 @@
     android:orientation="vertical"
     tools:context="com.exampl.loweractionbar.MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    <!-- 跳转到有关联的子activity，清单文件中已经指定 -->
     <Button
         android:id="@+id/bt_jump"
         android:onClick="click" 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/bt_text"/>
+    <!-- 引用了support包的情况下跳转到自定义ActionBar主题的页面 -->
+    <Button 
+        android:id="@+id/bt_custom_abTheme"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到自定义ActionBar主题页面"/>
+    <!-- 引用了support包的情况下跳转到自定义ActionBar文本颜色的页面 -->
+    <Button 
+        android:id="@+id/bt_custom_abTextColor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到自定义ActionBar文本颜色页面以及实现ActionBar Tab及自定义ActionBar Tab"/>
+    <Button 
+        android:id="@+id/bt_actonbar_voerlay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ActionBar覆盖Activity的模式(ActionBar在Activity的上面)"/>
+    <Button 
+        android:id="@+id/bt_actonbar_split"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="split ActionBar"/>
 
 </LinearLayout>

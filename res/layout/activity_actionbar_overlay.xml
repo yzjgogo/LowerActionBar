@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/overlay"
+    android:paddingTop="?attr/actionBarSize">
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#800080"
+        android:text="Android3.0以下的版本的ActionBar覆盖在Activity上面的模式:当最外层控件使用了android:paddingTop='?attr/actionBarSize'时，当前Activity的
+        内容从ActionBar的下面开始，当没有使用该属性时，Activity的内容从屏幕的顶端开始(ActionBar会覆盖住该部分内容),也可以用
+        android:layout_marginTop='?attr/actionBarSize'代替"/>
+
+</LinearLayout>
